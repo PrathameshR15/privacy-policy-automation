@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Masterstroke Technosoft Private Limited</title>
+  <meta name="description" content="Privacy Policy for Masterstroke Technosoft's AI-powered Social Media Automation Workflow (Testing Stage). Learn how Meta permissions, access tokens, and content are handled.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --text-main: #1f2937;
+      --text-muted: #4b5563;
+      --text-light: #6b7280;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --border: #e2e8f0;
+      --border-accent: #cbd5e1;
+      --tag-bg: #fef3c7;
+      --tag-border: #fcd34d;
+      --tag-text: #92400e;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-body);
+      color: var(--text-main);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 1.1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    .brand-badge {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: var(--primary);
+    }
+
+    .header-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .header-links a:hover {
+      color: var(--primary);
+    }
+
+    .main-container {
+      max-width: 960px;
+      margin: 2.5rem auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .policy-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2.75rem 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    @media (max-width: 640px) {
+      .main-container {
+        margin: 1.25rem auto 2.5rem;
+        padding: 0 1rem;
+      }
+      .policy-card {
+        padding: 1.75rem 1.25rem;
+      }
+    }
+
+    .page-title {
+      font-size: 2.15rem;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .company-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .meta-box {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      padding-bottom: 1.75rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.875rem;
+      color: var(--text-light);
+    }
+
+    .meta-item strong {
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    /* Notice Banner */
+    .notice-banner {
+      background-color: var(--tag-bg);
+      border: 1px solid var(--tag-border);
+      color: var(--tag-text);
+      padding: 1.15rem 1.35rem;
+      border-radius: var(--radius-md);
+      margin-bottom: 2.5rem;
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+    }
+
+    .notice-icon {
+      font-size: 1.25rem;
+      line-height: 1.3;
+      flex-shrink: 0;
+    }
+
+    .notice-content h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .notice-content p {
+      font-size: 0.875rem;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* Content styling */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    section:last-of-type {
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    ul, ol {
+      margin: 0.5rem 0 1.25rem 1.4rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+    }
+
+    li strong {
+      color: var(--text-main);
+    }
+
+    .info-table-wrapper {
+      overflow-x: auto;
+      margin: 1rem 0 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f8fafc;
+      font-weight: 600;
+      color: var(--text-main);
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .highlight-card {
+      background-color: #f8fafc;
+      border-left: 4px solid var(--primary);
+      padding: 1rem 1.25rem;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 1.25rem 0;
+    }
+
+    .highlight-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #334155;
+    }
+
+    /* Contact box */
+    .contact-card {
+      background: var(--primary-light);
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-card h3 {
+      margin-top: 0;
+      color: var(--primary-dark);
+    }
+
+    .contact-details {
+      list-style: none;
+      margin: 0.75rem 0 0 0;
+      padding: 0;
+    }
+
+    .contact-details li {
+      margin-bottom: 0.5rem;
+      font-size: 0.925rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+    }
+
+    footer p {
+      margin-bottom: 0.35rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="/privacy-policy" class="brand">
+        <span class="brand-badge"></span>
+        Masterstroke Technosoft
+      </a>
+      <div class="header-links">
+        <a href="mailto:support@mstblockchain.com">Support & Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+    <article class="policy-card">
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="company-subtitle">Masterstroke Technosoft Private Limited &bull; Automated Social Media Publishing Workflow</p>
+
+      <div class="meta-box">
+        <div class="meta-item"><strong>Effective Date:</strong> October 28, 2026</div>
+        <div class="meta-item"><strong>Last Updated:</strong> October 28, 2026</div>
+        <div class="meta-item"><strong>Scope:</strong> Testing Stage Social Media Automation</div>
+      </div>
+
+      <!-- Testing Stage Disclaimer -->
+      <div class="notice-banner">
+        <div class="notice-icon">&#9888;</div>
+        <div class="notice-content">
+          <h4>Testing-Stage Application Notice</h4>
+          <p>
+            This application and its underlying automation workflows are currently in a <strong>closed development and testing stage</strong>. It is operated strictly for development validation, pipeline optimization, and internal quality evaluation by <strong>Masterstroke Technosoft Private Limited</strong>. It is not currently deployed as a public multi-tenant software service.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 1: Introduction -->
+      <section>
+        <h2>1. Introduction</h2>
+        <p>
+          Masterstroke Technosoft Private Limited ("Company", "we", "us", or "our") respects your privacy. This Privacy Policy outlines our procedures and policies concerning the collection, access, processing, storage, and publishing of content and metadata when connecting to Meta platforms (including Facebook Pages and Instagram Professional/Creator accounts) via our automation workflows orchestrated with <strong>Activepieces</strong> and artificial intelligence models.
+        </p>
+        <p>
+          By connecting your Facebook Page or Instagram account to our workflow or participating in our testing phase, you acknowledge and agree to the data collection and usage practices described in this policy.
+        </p>
+      </section>
+
+      <!-- Section 2: How the Automation Workflow Operates -->
+      <section>
+        <h2>2. Workflow Overview & Architecture</h2>
+        <p>
+          Our automation system utilizes <strong>Activepieces</strong> (an open-source workflow automation platform) to orchestrate social media workflows. The workflow performs the following automated cycle:
+        </p>
+        <ol>
+          <li><strong>Content Draft Trigger:</strong> Ingestion of planned topics, prompts, or scheduled publishing cues.</li>
+          <li><strong>AI Text Generation:</strong> Synthesis of captions, descriptions, and hashtags using AI language models based on defined business parameters.</li>
+          <li><strong>Asset Ingestion:</strong> Retrieval of authorized uploaded images or graphic banners prepared for publication.</li>
+          <li><strong>API Dispatch to Meta:</strong> Transmitting authenticated publishing commands using Meta Graph APIs to target Facebook Pages and connected Instagram accounts.</li>
+          <li><strong>Publishing Status Verification:</strong> Receiving status callbacks or post IDs from Meta to verify successful delivery.</li>
+        </ol>
+      </section>
+
+      <!-- Section 3: Data We Collect and Process -->
+      <section>
+        <h2>3. Data Collection, Handling, and Usage</h2>
+        <p>
+          During the operation of this testing-stage automation, we access and handle only the minimum essential data required to perform scheduled publishing:
+        </p>
+        <ul>
+          <li><strong>Account & Profile Information:</strong> Meta User IDs, Facebook Page IDs, Instagram Business Account IDs, and Page names necessary to target the appropriate destination feed. We do not access or collect personal private messages, friends lists, or unrelated personal profile feeds.</li>
+          <li><strong>Access Tokens:</strong> OAuth 2.0 Page and User access tokens generated via Meta Login. These tokens are stored securely and utilized solely for signing authenticated requests to the Meta Graph API.</li>
+          <li><strong>Uploaded Images & Creative Media:</strong> Images, graphics, and visual assets provided by account managers or stored in secured cloud repositories intended solely for publishing.</li>
+          <li><strong>AI-Generated Text:</strong> Social media post captions, hashtags, and summaries generated during workflow execution.</li>
+          <li><strong>Post Content & Metadata:</strong> Publication timestamps, published post identifiers returned by Meta, and error logs generated during automated publishing cycles.</li>
+        </ul>
+      </section>
+
+      <!-- Section 4: Meta Permissions & Purpose -->
+      <section>
+        <h2>4. Meta API Permissions and Their Purpose</h2>
+        <p>
+          To enable programmatic social media publishing, our application requests specific granular permissions from Meta. Each requested permission is mapped to a strict operational necessity:
+        </p>
+        <div class="info-table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Requested Permission</th>
+                <th>Platform</th>
+                <th>Exact Operational Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>pages_show_list</code></td>
+                <td>Facebook</td>
+                <td>Allows the workflow to discover and list the Facebook Pages managed by the authenticated account for selection.</td>
+              </tr>
+              <tr>
+                <td><code>pages_read_engagement</code></td>
+                <td>Facebook</td>
+                <td>Verifies publishing status and checks post availability after execution.</td>
+              </tr>
+              <tr>
+                <td><code>pages_manage_posts</code></td>
+                <td>Facebook</td>
+                <td>Grants programmatic capability to create, publish, and schedule posts and media directly to designated Facebook Pages.</td>
+              </tr>
+              <tr>
+                <td><code>instagram_basic</code></td>
+                <td>Instagram</td>
+                <td>Reads basic account information (ID, handle) for connected Instagram Professional/Business accounts.</td>
+              </tr>
+              <tr>
+                <td><code>instagram_content_publish</code></td>
+                <td>Instagram</td>
+                <td>Allows automated uploading and publishing of single images, carousels, and accompanying captions to the connected Instagram account.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight-card">
+          <p>
+            <strong>Note on Usage:</strong> We do not utilize Meta permissions to access direct messages (DMs), read private follower profiles, modify account credentials, or track user activity across unrelated services.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 5: Third-Party Services -->
+      <section>
+        <h2>5. Third-Party Service Providers</h2>
+        <p>
+          Our automation architecture incorporates industry-standard third-party providers. Information is processed across these providers strictly in accordance with their respective privacy and operational standards:
+        </p>
+        <ul>
+          <li><strong>Meta Platforms, Inc. (Facebook & Instagram APIs):</strong> Receives post captions, media URLs, and API tokens to execute live posts on your authorized pages. Data processed by Meta is subject to the <a href="https://www.facebook.com/privacy/policy" target="_blank" rel="noopener noreferrer">Meta Privacy Policy</a>.</li>
+          <li><strong>Activepieces:</strong> Serves as the orchestration layer executing the scheduled nodes and integrations. Token credentials and workflow variables are encrypted within the workflow execution environment.</li>
+          <li><strong>AI Providers (e.g., OpenAI, Google Cloud Vertex AI/Gemini, Anthropic):</strong> Receives text prompts, stylistic guidelines, or context parameters to generate captions and marketing copy. <em>We do not send proprietary passwords, customer personal identity numbers, or unrelated confidential records to AI models.</em></li>
+          <li><strong>Hosting & Cloud Infrastructure:</strong> Web resources and policy endpoints are hosted on Vercel with HTTPS encryption.</li>
+        </ul>
+      </section>
+
+      <!-- Section 6: Data Security Measures -->
+      <section>
+        <h2>6. Data Security Practices</h2>
+        <p>
+          We employ robust administrative, technical, and physical measures to safeguard information handled by our automation workflows:
+        </p>
+        <ul>
+          <li><strong>Token Protection:</strong> OAuth access tokens and API keys are stored in encrypted environment variables or secure key vaults with restricted access.</li>
+          <li><strong>Encrypted Transmission:</strong> All data transmissions between Activepieces, AI endpoints, and the Meta Graph API are conducted over TLS 1.3/HTTPS encrypted connections.</li>
+          <li><strong>Principle of Least Privilege:</strong> Only authorized engineering personnel involved in testing and development maintain administrative access to workflow triggers and logs.</li>
+        </ul>
+      </section>
+
+      <!-- Section 7: Data Retention & Deletion Procedures -->
+      <section>
+        <h2>7. Data Retention and Deletion Procedures</h2>
+        <p>
+          Given that this workflow is in an active testing stage, data retention is kept to the absolute operational minimum:
+        </p>
+        <ul>
+          <li><strong>Access Tokens:</strong> Tokens are retained only for the duration of the testing cycle or until invalidated or manually revoked.</li>
+          <li><strong>Execution Logs:</strong> Activepieces execution logs (containing transient payload references) are automatically rotated and purged after 14 to 30 days.</li>
+          <li><strong>Published Media:</strong> Once media is successfully posted to Meta, temporary file references on staging storage are deleted within 7 days.</li>
+        </ul>
+        <h3>Data Deletion Request Instructions</h3>
+        <p>
+          You have the right to request the immediate erasure of any stored credentials, tokens, or operational logs linked to your accounts. You can initiate data deletion by:
+        </p>
+        <ol>
+          <li>Revoking application permissions at any time via your Facebook account under <strong>Settings & Privacy &rarr; Settings &rarr; Apps and Websites</strong>.</li>
+          <li>Submitting a written deletion request to <a href="mailto:support@mstblockchain.com">support@mstblockchain.com</a> with the subject line <em>"Data Deletion Request - Social Automation"</em>. We will process and confirm complete deletion within 5 business days.</li>
+        </ol>
+      </section>
+
+      <!-- Section 8: User Privacy Rights -->
+      <section>
+        <h2>8. Your Privacy Rights</h2>
+        <p>
+          Depending on your jurisdiction (including the Information Technology Act of India and applicable global data protection principles such as GDPR/CCPA), you maintain the right to:
+        </p>
+        <ul>
+          <li>Request confirmation of whether your data or credentials are being processed.</li>
+          <li>Request access to, rectification of, or permanent deletion of your stored account tokens or records.</li>
+          <li>Withdraw consent for automated publishing or Meta account connection at any time without penalty.</li>
+          <li>Lodge inquiries or concerns regarding automated data handling.</li>
+        </ul>
+      </section>
+
+      <!-- Section 9: Updates to this Policy -->
+      <section>
+        <h2>9. Policy Updates</h2>
+        <p>
+          We may update this Privacy Policy from time to time as our automation workflows evolve, when advancing from testing to production, or to reflect changes in legal, regulatory, or Meta platform policies. Any revisions will be reflected on this page with an updated "Last Updated" date.
+        </p>
+      </section>
+
+      <!-- Section 10: Contact Information -->
+      <section>
+        <h2>10. Contact Us</h2>
+        <p>
+          If you have questions, feedback, or concerns regarding this Privacy Policy, our data handling procedures, or our social media automation workflows, please contact our privacy and engineering desk:
+        </p>
+
+        <div class="contact-card">
+          <h3>Masterstroke Technosoft Private Limited</h3>
+          <ul class="contact-details">
+            <li><strong>Company:</strong> Masterstroke Technosoft Private Limited</li>
+            <li><strong>Headquarters:</strong> Pune, Maharashtra, India</li>
+            <li><strong>Official Support Email:</strong> <a href="mailto:support@mstblockchain.com">support@mstblockchain.com</a></li>
+            <li><strong>Operational Focus:</strong> Blockchain, AI Engineering & Workflow Automation</li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Masterstroke Technosoft Private Limited. All rights reserved.</p>
+    <p>This privacy document is maintained for testing-stage automation workflows.</p>
+  </footer>
+
+</body>
+</html>
